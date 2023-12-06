@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Promise API</h2>
+    <p>There are 6 static Methods of Promise Class</p>
+    <ol>
+        <li><a href="">Promise.all</a></li>
+        <li><a href="">Promise.allSettled</a></li>
+        <li><a href="">Promise.race</a></li>
+        <li><a href="">Promise.any</a></li>
+        <li><a href="">Promise.resolve</a></li>
+        <li><a href="">Promise.reject</a></li>
+
+    </ol>
+
+    
+    <script src="./script.js">
+        let p1 = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                setTimeout(()=>{
+                    resolve("Value 1")
+                }, 1000);
+            })
+        });
+
+        let p2 = new Promise((resolver, reject)=>{
+            setTimeout(()=>{
+                resolve("Value 2");
+            }, 2000);
+        });
+        let p3 = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                resolve("Value 3")
+            },3000);
+        })
+
+    </script>
+</body>
+</html>
